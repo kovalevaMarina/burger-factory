@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title-h1 {
+  @apply font-poppins text-8xl font-black;
+}
+
+.title-h2 {
+  @apply font-poppins text-6xl font-black;
+}
+
+.title-h3 {
+  @apply font-poppins text-2xl font-bold;
+}
+
+.bg-im {
+  background: linear-gradient(170deg, #709dca 65%, #00B3FA 25%, #ffffff 15%);
+}
