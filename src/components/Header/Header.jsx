@@ -1,43 +1,45 @@
 import React from "react";
+import handleScroll from "../helper/index";
 import { Link } from "react-router-dom";
 import { logo } from "../helper/images";
 
-const Header = () => {
+const Header = ({ ingredientRef, storyRef, burgersRef, locationRef }) => {
   const menu = [
     {
       name: "ingredient",
-      // ref: ingredientRef,
+      ref: ingredientRef,
     },
     {
       name: "story",
-      // ref: storyRef,
+      ref: storyRef,
     },
     {
       name: "burgers",
-      // ref: burgersRef,
+      ref: burgersRef,
     },
     {
       name: "location",
-      // ref: locationRef,
+      ref: locationRef,
     },
   ];
 
   const renderItemMenu = (item, i) => {
     return (
-      <li key={i} className="hidden md:flex">
-        <a
-          className="text-lg uppercase font-bold font-poppins text-mine-shaft"
-          href="#"
+      <li key={i} className="hidden lg:flex">
+        <Link
+          onClick={() => handleScroll(item.ref.current)}
+          className="text-mine-shaft text-lg uppercase font-bold transition-color duration-300 font-poppins hover:text-cerulean"
+          to={`#${item.name}`}
         >
           {item.name}
-        </a>
+        </Link>
       </li>
     );
   };
 
   return (
     <header>
-      <div className="container px-4">
+      <div className="container px-4 mx-auto">
         <div className="flex justify-between items-center py-7">
           <div>
             <img
@@ -47,10 +49,15 @@ const Header = () => {
             />
           </div>
           <nav>
-            <ul className="sm:flex">{menu.map(renderItemMenu)}</ul>
+            <ul className="lg:flex lg:gap-x-16">{menu.map(renderItemMenu)}</ul>
+            <button className="block py-2 px-3 transition-all bg-transparent lg:hidden hover:bg-mine-shaft hover:bg-opacity-20 rounded-lg">
+              <div className="w-5 h-0.5 bg-mine-shaft mb-1"></div>
+              <div className="w-5 h-0.5 bg-mine-shaft mb-1"></div>
+              <div className="w-5 h-0.5 bg-mine-shaft"></div>
+            </button>
           </nav>
           <div>
-            <button className="bg-cerulean text-lg rounded-lg sm:py-2 py-1 sm:px-8 px-3 font-bold font-poppins text-mine-shaft">
+            <button className="bg-cerulean focus:outline-none text-xs transition-all duration-300 sm:text-base md:text-lg rounded-lg sm:py-2 py-1 sm:px-8 px-3 font-bold font-poppins text-mine-shaft border-2 border-transparent hover:border-cerulean hover:text-cerulean hover:bg-white">
               Order now
             </button>
           </div>

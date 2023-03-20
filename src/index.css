@@ -5,15 +5,19 @@
 @tailwind utilities;
 
 .title-h1 {
-  @apply font-poppins text-8xl font-black;
+  @apply font-poppins text-8xl font-black text-mine-shaft;
 }
 
 .title-h2 {
-  @apply font-poppins text-6xl font-black;
+  @apply font-poppins text-6xl font-black text-mine-shaft;
 }
 
 .title-h3 {
-  @apply font-poppins text-2xl font-bold;
+  @apply font-poppins text-2xl font-bold text-mine-shaft;
+}
+
+.text-main {
+  @apply font-poppins text-lg font-normal text-mine-shaft;
 }
 
 .bg-im {
