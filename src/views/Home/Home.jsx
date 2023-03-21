@@ -20,8 +20,8 @@ const Home = () => {
       />
       <main>
         <Promo />
-        {/* <Ingredients ingredientRef={ingredientRef} />
-        <Story storyRef={storyRef} /> */}
+        <Ingredients ingredientRef={ingredientRef} />
+        {/* <Story storyRef={storyRef} /> */}
       </main>
     </>
   );

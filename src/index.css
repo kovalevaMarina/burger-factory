@@ -9,15 +9,19 @@
 }
 
 .title-h2 {
-  @apply font-poppins text-6xl font-black text-mine-shaft;
+  @apply font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black text-mine-shaft;
 }
 
 .title-h3 {
-  @apply font-poppins text-xl md:text-2xl font-bold text-mine-shaft;
+  @apply font-poppins text-lg sm:text-xl md:text-2xl font-bold text-mine-shaft;
+}
+
+.title-h4 {
+  @apply font-poppins text-lg font-bold text-mine-shaft;
 }
 
 .text-main {
-  @apply font-poppins text-lg font-normal text-mine-shaft;
+  @apply font-poppins text-base md:text-lg font-normal text-mine-shaft;
 }
 
 .bg-im {

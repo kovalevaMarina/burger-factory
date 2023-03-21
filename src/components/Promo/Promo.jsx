@@ -3,7 +3,7 @@ import { hamburger } from "../helper/images";
 
 const Promo = () => {
   return (
-    <section className="bg-im">
+    <section className="bg-im mb-20 md:mb-24">
       <div className="container px-4 mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center pt-12 pb-2">
           <div className="text-center sm:text-left mb-6 sm:mb-0">
@@ -11,7 +11,7 @@ const Promo = () => {
             <h3 className="title-h3 mb-5">
               Your dreamed burger close to your locations!
             </h3>
-            <button className="text-md lg:text-lg py-1 px-6 rounded-lg bg-ripe-lemon font-bold font-poppins text-mine-shaft">
+            <button className="text-md lg:text-lg py-1 px-6 transition-all duration-300 rounded-lg bg-ripe-lemon font-bold font-poppins text-mine-shaft border-transparent border-2 hover:border-mine-shaft hover:border-2">
               Discover the ingredients
             </button>
           </div>
