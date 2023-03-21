@@ -1,5 +1,6 @@
 import React from "react";
-import { buns, salad, tomato, cheese } from "../helper/images";
+import IngredientsItem from "./IngredientsItem";
+import { buns, salad, tomato, cheese, meat } from "../helper/images";
 
 const Ingredients = ({ ingredientRef }) => {
   const ingredientsData = [
@@ -21,6 +22,11 @@ const Ingredients = ({ ingredientRef }) => {
       name: "Cheese",
       image: cheese,
     },
+
+    {
+      name: "Meat",
+      image: meat,
+    },
   ];
 
   return (
@@ -33,21 +39,7 @@ const Ingredients = ({ ingredientRef }) => {
         </h3>
         <div className="flex flex-col py-12 gap-12">
           {ingredientsData.map((ingredient, i) => {
-            return (
-              <div
-                key={i}
-                className="max-w-60 max-h-64 shadow-xl flex flex-col items-center gap-6 p-5 rounded-xl"
-              >
-                <div className="w-48 h-40 flex items-center justify-center">
-                  <img
-                    className="h-full bg-cover"
-                    src={ingredient.image}
-                    alt={`Picture ${ingredient.name}`}
-                  />
-                </div>
-                <h4 className="title-h4">{ingredient.name}</h4>
-              </div>
-            );
+            return <IngredientsItem {...ingredient} key={i} />;
           })}
         </div>
         <p className="text-main text-center">
