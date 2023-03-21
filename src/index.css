@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .title-h1 {
-  @apply font-poppins text-8xl font-black text-mine-shaft;
+  @apply font-poppins text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black text-mine-shaft;
 }
 
 .title-h2 {
@@ -13,7 +13,7 @@
 }
 
 .title-h3 {
-  @apply font-poppins text-2xl font-bold text-mine-shaft;
+  @apply font-poppins text-xl md:text-2xl font-bold text-mine-shaft;
 }
 
 .text-main {
@@ -21,5 +21,5 @@
 }
 
 .bg-im {
-  background: linear-gradient(170deg, #709dca 65%, #00B3FA 25%, #ffffff 15%);
+  background: linear-gradient(175deg, #709dca 70%, #00B3FA 25%, #ffffff 30%);
 }
