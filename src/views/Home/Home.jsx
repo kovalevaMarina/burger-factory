@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Promo from "../../components/Promo/Promo";
 import Ingredients from "../../components/Ingredients/Ingredients";
 import Story from "../../components/Story/Story";
+import Burgers from "../../components/Burgers/Burgers";
 
 const Home = () => {
   const ingredientRef = useRef(null);
@@ -21,7 +22,8 @@ const Home = () => {
       <main>
         <Promo />
         <Ingredients ingredientRef={ingredientRef} />
-        {/* <Story storyRef={storyRef} /> */}
+        <Story storyRef={storyRef} />
+        <Burgers burgersRef={burgersRef} />
       </main>
     </>
   );

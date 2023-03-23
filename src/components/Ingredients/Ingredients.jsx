@@ -30,8 +30,8 @@ const Ingredients = ({ ingredientRef }) => {
   ];
 
   return (
-    <section ref={ingredientRef} className=" py-5 md:py-12">
-      <div className="container px-4">
+    <section ref={ingredientRef} className="pt-5 md:pt-12 mb-10 md:mb-24">
+      <div className="container px-4 mx-auto">
         <h2 className="title-h2 mb-5 text-center">Ingredients</h2>
         <h3 className="title-h3 text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis
