@@ -5,6 +5,7 @@ import Ingredients from "../../components/Ingredients/Ingredients";
 import Story from "../../components/Story/Story";
 import Location from "../../components/Location/Location";
 import Burgers from "../../components/Burgers/Burgers";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const ingredientRef = useRef(null);
@@ -27,6 +28,7 @@ const Home = () => {
         <Burgers burgersRef={burgersRef} />
         <Location locationRef={locationRef} />
       </main>
+      <Footer />
     </>
   );
 };

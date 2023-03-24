@@ -1,8 +1,8 @@
 import React from "react";
-import handleScroll from "../helper/index";
+import { handleScroll } from "../helper/index";
 import Button from "../Button/Button";
+import Logo from "../Logo/Logo";
 import { Link } from "react-router-dom";
-import { logo } from "../helper/images";
 
 const Header = ({ ingredientRef, storyRef, burgersRef, locationRef }) => {
   const menu = [
@@ -42,13 +42,7 @@ const Header = ({ ingredientRef, storyRef, burgersRef, locationRef }) => {
     <header>
       <div className="container px-4 mx-auto">
         <div className="flex justify-between items-center py-7">
-          <div>
-            <img
-              className="w-30 h-10 sm:w-52 sm:h-16"
-              src={logo}
-              alt="Main logo burger factory"
-            />
-          </div>
+          <Logo />
           <nav>
             <ul className="lg:flex lg:gap-x-16">{menu.map(renderItemMenu)}</ul>
             <button className="block py-2 px-3 transition-all bg-transparent lg:hidden hover:bg-mine-shaft hover:bg-opacity-20 rounded-lg">
