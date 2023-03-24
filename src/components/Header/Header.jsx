@@ -1,5 +1,6 @@
 import React from "react";
 import handleScroll from "../helper/index";
+import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import { logo } from "../helper/images";
 
@@ -57,9 +58,7 @@ const Header = ({ ingredientRef, storyRef, burgersRef, locationRef }) => {
             </button>
           </nav>
           <div>
-            <button className="bg-cerulean focus:outline-none text-xs transition-all duration-300 sm:text-base md:text-lg rounded-lg sm:py-2 py-1 sm:px-8 px-3 font-bold font-poppins text-mine-shaft border-2 border-transparent hover:border-cerulean hover:text-cerulean hover:bg-white">
-              Order now
-            </button>
+            <Button />
           </div>
         </div>
       </div>

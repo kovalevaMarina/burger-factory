@@ -13,7 +13,7 @@ const BurgerItem = ({ title, images, index }) => {
       </div>
       <a
         href="#"
-        className="text-lg self-end font-poppins text-azure-radiance font-bold transition-all duration-300 hover:opacity-80"
+        className="text-sm sm:text-base md:text-lg self-end font-poppins text-azure-radiance font-bold transition-all duration-300 hover:opacity-80"
       >
         Details
       </a>

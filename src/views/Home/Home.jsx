@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Promo from "../../components/Promo/Promo";
 import Ingredients from "../../components/Ingredients/Ingredients";
 import Story from "../../components/Story/Story";
+import Location from "../../components/Location/Location";
 import Burgers from "../../components/Burgers/Burgers";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
         <Ingredients ingredientRef={ingredientRef} />
         <Story storyRef={storyRef} />
         <Burgers burgersRef={burgersRef} />
+        <Location locationRef={locationRef} />
       </main>
     </>
   );
