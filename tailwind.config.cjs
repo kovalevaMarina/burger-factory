@@ -15,7 +15,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        'gradient-104': 'linear-gradient(104deg, var(--tw-gradient-stops))'
+        'gradient-104': 'linear-gradient(104deg, var(--tw-gradient-stops))',
+        'promo-texture': "url('../../src/assets/images/promo_bg.svg')"
       },
 
       fontSize: {
@@ -37,5 +38,5 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

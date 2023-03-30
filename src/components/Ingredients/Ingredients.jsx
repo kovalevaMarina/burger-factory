@@ -31,16 +31,18 @@ const Ingredients = ({ ingredientRef }) => {
 
   return (
     <section ref={ingredientRef} className="pt-5 md:pt-12 mb-10 md:mb-24">
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 mx-auto max-w-[1230px]">
         <h2 className="title-h2 mb-5 text-center">Ingredients</h2>
         <h3 className="title-h3 text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis
           id arcu vel maximus.
         </h3>
-        <div className="flex flex-col py-12 gap-12">
-          {ingredientsData.map((ingredient, i) => {
-            return <IngredientsItem {...ingredient} key={i} />;
-          })}
+        <div className="relative">
+          <div className="flex gap-12 carousel carousel-bg py-12">
+            {ingredientsData.map((ingredient, i) => {
+              return <IngredientsItem {...ingredient} key={i} />;
+            })}
+          </div>
         </div>
         <p className="text-main text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
