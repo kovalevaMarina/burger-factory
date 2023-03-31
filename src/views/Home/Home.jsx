@@ -6,6 +6,7 @@ import Story from "../../components/Story/Story";
 import Location from "../../components/Location/Location";
 import Burgers from "../../components/Burgers/Burgers";
 import Footer from "../../components/Footer/Footer";
+import MenuItem from "../../components/Menu/MenuItem";
 
 const Home = () => {
   const ingredientRef = useRef(null);
@@ -14,22 +15,31 @@ const Home = () => {
   const locationRef = useRef(null);
 
   return (
-    <>
-      <Header
-        ingredientRef={ingredientRef}
-        storyRef={storyRef}
-        burgersRef={burgersRef}
-        locationRef={locationRef}
-      />
-      <main>
-        <Promo />
-        <Ingredients ingredientRef={ingredientRef} />
-        <Story storyRef={storyRef} />
-        <Burgers burgersRef={burgersRef} />
-        <Location locationRef={locationRef} />
-      </main>
-      <Footer />
-    </>
+    <div className="drawer">
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col">
+        <Header />
+        <main>
+          <Promo />
+          <Ingredients ingredientRef={ingredientRef} />
+          <Story storyRef={storyRef} />
+          <Burgers burgersRef={burgersRef} />
+          <Location locationRef={locationRef} />
+        </main>
+        <Footer />
+      </div>
+      <div className="drawer-side">
+        <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
+        <ul className="menu p-4 w-80 bg-base-100">
+          <MenuItem
+            ingredientRef={ingredientRef}
+            storyRef={storyRef}
+            burgersRef={burgersRef}
+            locationRef={locationRef}
+          />
+        </ul>
+      </div>
+    </div>
   );
 };
 
