@@ -23,13 +23,14 @@ const MenuItem = ({ ingredientRef, storyRef, burgersRef, locationRef }) => {
   ];
 
   const renderItemMenu = (item, i) => {
+    console.log(item);
     return (
       <li key={i} className="flex">
         <Link
           onClick={() => {
             handleScroll(item.ref.current);
           }}
-          className="text-mine-shaft text-lg uppercase font-bold transition-color duration-300 font-poppins hover:text-cerulean"
+          className="text-mine-shaft text-lg uppercase font-bold transition-color duration-300 font-poppins hover:text-cerulean active:bg-transparent"
           to={`#${item.name}`}
         >
           {item.name}

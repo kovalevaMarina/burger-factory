@@ -10,7 +10,9 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row sm:justify-between items-center">
           <Logo />
           <div className="flex flex-col items-center sm:items-end sm:flex-end mt-5 gap-2">
-            <p className="text-sm font-bold">{data.factory}</p>
+            <p className="text-sm  sm:text-base md:text-xl font-bold">
+              {data.factory}
+            </p>
             {data.address.map(renderItemAddress)}
           </div>
         </div>
