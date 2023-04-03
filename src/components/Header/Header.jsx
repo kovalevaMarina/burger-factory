@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import MenuItem from "../Menu/MenuItem";
 
-const Header = () => {
+const Header = ({ ingredientRef, storyRef, burgersRef, locationRef }) => {
   return (
     <header>
       <div className="container px-4 mx-auto">
@@ -11,7 +11,12 @@ const Header = () => {
           <Logo />
           <nav>
             <ul className="lg:flex lg:gap-x-16 hidden p-10">
-              <MenuItem />
+              <MenuItem
+                ingredientRef={ingredientRef}
+                storyRef={storyRef}
+                burgersRef={burgersRef}
+                locationRef={locationRef}
+              />
             </ul>
             <label
               htmlFor="my-drawer-3"

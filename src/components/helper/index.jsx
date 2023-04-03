@@ -1,5 +1,5 @@
 const handleScroll = (ref) => {
-  window.scrollTo({
+  document.querySelector(".drawer-content").scrollTo({
     top: ref.offsetTop,
     left: 0,
     behavior: "smooth",

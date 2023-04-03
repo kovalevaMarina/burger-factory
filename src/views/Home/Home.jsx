@@ -18,7 +18,12 @@ const Home = () => {
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
-        <Header />
+        <Header
+          ingredientRef={ingredientRef}
+          storyRef={storyRef}
+          burgersRef={burgersRef}
+          locationRef={locationRef}
+        />
         <main>
           <Promo />
           <Ingredients ingredientRef={ingredientRef} />
