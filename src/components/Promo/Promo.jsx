@@ -3,7 +3,7 @@ import { hamburger } from "../helper/images";
 
 const Promo = () => {
   return (
-    <section className="bg-promo-texture bg-no-repeat bg-origin-padding bg-top bg-cover mb-20 md:mb-24">
+    <section className="promo-texture-bg bg-no-repeat bg-origin-padding bg-top bg-cover mb-20 md:mb-24">
       <div className="container px-4 mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center pt-12 pb-2">
           <div className="text-center sm:text-left mb-6 sm:mb-0">

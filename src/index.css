@@ -44,6 +44,9 @@
     background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
     /* IE10+ */
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
-} 
+}
 
+.promo-texture-bg {
+  background-image: url("./assets/images/promo_bg.svg");
+}
 
