@@ -16,11 +16,7 @@ const Promo = () => {
             </button>
           </div>
           <div className="max-w-xs sm:max-w-sm xl:max-w-2xl max-h-[626px]">
-            <img
-              className="h-full"
-              src={hamburger}
-              alt="Big hamburger with ingredients"
-            />
+            <img src={hamburger} alt="Big hamburger with ingredients" />
           </div>
         </div>
       </div>
