@@ -16,7 +16,7 @@ module.exports = {
 
       backgroundImage: {
         'gradient-104': 'linear-gradient(104deg, var(--tw-gradient-stops))',
-        'promo-texture': "url('./../../src/assets/images/promo_bg.svg')",
+        'promo-texture': "url('./src/assets/images/promo_bg.svg')",
       },
 
       fontSize: {
