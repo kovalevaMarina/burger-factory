@@ -38,11 +38,12 @@ const Ingredients = ({ ingredientRef }) => {
           id arcu vel maximus.
         </h3>
         <div className="relative">
-          <div className="flex gap-12 carousel carousel-bg py-12">
+          <div className="flex gap-12 carousel py-12">
             {ingredientsData.map((ingredient, i) => {
               return <IngredientsItem {...ingredient} key={i} />;
             })}
           </div>
+          <div className="carousel-bg absolute top-0 right-0 h-full w-12"></div>
         </div>
         <p className="text-main text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget

@@ -28,22 +28,16 @@
   background: linear-gradient(175deg, #709dca 70%, #00B3FA 25%, #ffffff 30%);
 }
 
-.carousel-bg:before {
-    content: "";
-    top: 0;
-    left: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
-    /* IE10+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%);
+.carousel-bg {
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%);
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 100%);
 }
 
 .promo-texture-bg {
